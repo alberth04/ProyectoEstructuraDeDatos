@@ -26,9 +26,12 @@ ArrayQueue::ArrayQueue(){
  *
  */
 ArrayQueue::~ArrayQueue(){
-	for (size_t i = 0; i <= ultimo; i++){
-		delete arreglo [i];
+	if (ultimo != -1){
+		for (size_t i = 0; i <= ultimo; i++){
+			delete arreglo [i];
+		}
 	}
+	
 }
 /**
  * @brief Metodo encolar pide un objeto, detecta si no esta lleno, sino mete a la cola
