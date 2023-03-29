@@ -34,6 +34,11 @@ public:
 	 */
 	ArrayStack();
 	/**
+	 * @brief Destructor
+	 *
+	 */
+	~ArrayStack();
+	/**
 	 * @brief Metodo que Agrega un elemento objeto en la parte superior de la pila, siempre y cuando la pila no este llena.
 	 *
 	 */

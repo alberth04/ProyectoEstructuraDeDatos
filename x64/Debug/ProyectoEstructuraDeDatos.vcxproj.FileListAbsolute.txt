@@ -1,1 +1,2 @@
 C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\x64\Debug\ProyectoEstructuraDeDatos.exe
+C:\Users\WALTHERANTONIOCARRAS\Desktop\ProyectoEstructuraDeDatos\x64\Debug\ProyectoEstructuraDeDatos.exe

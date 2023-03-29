@@ -1,13 +1,1 @@
-﻿  ProyectoEstructuraDeDatos.cpp
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(385,14): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(517,7): warning C4101: 'c': unreferenced local variable
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(765,12): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(772,13): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(834,15): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(879,14): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(904,14): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(934,15): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(938,14): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(965,14): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\ProyectoEstructuraDeDatos.cpp(992,14): warning C4566: character represented by universal-character-name '\uFFFD' cannot be represented in the current code page (1252)
-  ProyectoEstructuraDeDatos.vcxproj -> C:\Users\godoy\OneDrive\Documentos\C++Proyects\ProyectoEstructuraDeDatos\x64\Debug\ProyectoEstructuraDeDatos.exe
+﻿  ProyectoEstructuraDeDatos.vcxproj -> C:\Users\WALTHERANTONIOCARRAS\Desktop\ProyectoEstructuraDeDatos\x64\Debug\ProyectoEstructuraDeDatos.exe

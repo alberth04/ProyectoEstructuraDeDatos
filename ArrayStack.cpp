@@ -7,6 +7,13 @@ using namespace std;
 ArrayStack::ArrayStack(){
 }
 
+//Destructor
+ArrayStack::~ArrayStack() {
+	for (int i = 0; i < size; i++) {
+		delete data[i];
+	}
+}
+
 //Agrega un elemento objeto en la parte superior de la pila, siempre y cuando la pila no est� llena.
 void ArrayStack::push(Object* objeto){
 	if (size < MAX_SIZE)
@@ -32,8 +39,10 @@ Object* ArrayStack::pop(){
 
 //Vac�a o elimina todos los elementos de la pila
 void ArrayStack::clear(){
-	while (!isEmpty())
-		data [--size] = nullptr;
+	while (!isEmpty()) {
+		delete data[--size];
+		data[size] = nullptr;
+	}
 }
 
 //Devuelve verdadero si la pila est� vac�a; de lo contrario, devuelve falso.

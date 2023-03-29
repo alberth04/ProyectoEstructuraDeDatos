@@ -81,7 +81,7 @@ ArrayStack arrayStack;
  * @brief Variable que instancia un arreglo de listas
  *
  */
-arrayList arrayList;
+arrayList arraylist;
 /**
  * @brief Variable que instancia una pila con nodos
  *
@@ -632,7 +632,7 @@ void listaArrayList(int& opcionExtra){
 				cout << "\t\tIngrese el numero de cuenta del alumno: ";
 				cin >> cuenta;
 				Alumno* alumno = new Alumno(nombre, cuenta);
-				arrayList.insertar(alumno);
+				arraylist.insertar(alumno);
 				cout << "\t\tAlumno insertado correctamente\n";
 
 				cout << "\t\t¿Desea insertar otro alumno? (S/N) ";
@@ -642,12 +642,12 @@ void listaArrayList(int& opcionExtra){
 		}
 		case 2:
 		{
-			if (arrayList.estaVacia()){
+			if (arraylist.estaVacia()){
 				cout << "\t\tLa lista esta vacia." << endl;
 			} else{
 				cout << "\t\tAlumnos en la lista:" << endl;
-				for (int i = 0; i < arrayList.getTamano(); i++){
-					Alumno* alumno = static_cast<Alumno*>(arrayList.obtener(i));
+				for (int i = 0; i < arraylist.getTamano(); i++){
+					Alumno* alumno = static_cast<Alumno*>(arraylist.obtener(i));
 					cout << "\t\t[" << i << "] " << alumno->getNombre() << " [" << alumno->getNumCuenta() << "]";
 					cout << endl;
 				}
@@ -662,8 +662,8 @@ void listaArrayList(int& opcionExtra){
 			cin >> cuenta;
 			bool encontrado = false;
 			int i = 0;
-			for (i = 0; i < arrayList.getTamano(); i++){
-				Alumno* alumno = static_cast<Alumno*>(arrayList.obtener(i));
+			for (i = 0; i < arraylist.getTamano(); i++){
+				Alumno* alumno = static_cast<Alumno*>(arraylist.obtener(i));
 				if (alumno->getNumCuenta() == cuenta){
 					encontrado = true;
 					break;
@@ -671,7 +671,7 @@ void listaArrayList(int& opcionExtra){
 			}
 			if (encontrado){
 				cout << "\t\tAlumno encontrado en la posicion " << i << endl;
-				Alumno* alumno = static_cast<Alumno*>(arrayList.obtener(i));
+				Alumno* alumno = static_cast<Alumno*>(arraylist.obtener(i));
 				cout << "\t\tNombre: " << alumno->getNombre() << endl;
 				cout << "\t\tCuenta: " << alumno->getNumCuenta() << endl;
 			} else{
@@ -687,13 +687,13 @@ void listaArrayList(int& opcionExtra){
 			cin >> cuenta;
 			bool encontrado = false;
 
-			for (int i = 0; i < arrayList.getTamano(); i++){
-				Alumno* alumno = static_cast<Alumno*>(arrayList.obtener(i));
+			for (int i = 0; i < arraylist.getTamano(); i++){
+				Alumno* alumno = static_cast<Alumno*>(arraylist.obtener(i));
 				if (alumno->getNumCuenta() == cuenta){
 					encontrado = true;
 
 				}
-				bool borrado = arrayList.borrar(alumno);
+				bool borrado = arraylist.borrar(alumno);
 				if (borrado){
 					cout << "\t\tEl alumno con el numero de cuenta " << cuenta << " fue borrado de la lista\n";
 				} else{
@@ -709,7 +709,7 @@ void listaArrayList(int& opcionExtra){
 		case 5:
 		{
 			std::cout << "" << std::endl;
-			if (arrayList.estaVacia()){
+			if (arraylist.estaVacia()){
 				cout << "\t\tLa lista esta vacia\n";
 			} else{
 				cout << "\t\tLa lista no esta vacia\n";
@@ -720,11 +720,11 @@ void listaArrayList(int& opcionExtra){
 		case 6:
 		{
 			std::cout << "" << std::endl;
-			if (!arrayList.estaVacia()){
+			if (!arraylist.estaVacia()){
 				int posicion;
 				cout << "\t\tIngrese la posicion del elemento que desea obtener: ";
 				cin >> posicion;
-				Object* obj = arrayList.obtener(posicion);
+				Object* obj = arraylist.obtener(posicion);
 				if (obj == nullptr){
 					cout << "\t\tPosicion invalida." << endl;
 				} else{
@@ -744,8 +744,8 @@ void listaArrayList(int& opcionExtra){
 			int posicion;
 			cout << "\t\tIngrese la posicion del elemento anterior al que desea obtener: ";
 			cin >> posicion;
-			if (posicion >= 0 && posicion < arrayList.getTamano() - 1){
-				Alumno* alumno = dynamic_cast<Alumno*>(arrayList.obtener(posicion));
+			if (posicion >= 0 && posicion < arraylist.getTamano() - 1){
+				Alumno* alumno = dynamic_cast<Alumno*>(arraylist.obtener(posicion));
 				if (alumno != nullptr){
 					// Acceder a los miembros de la clase Alumno
 					std::cout << "\t\tNombre: " << alumno->getNombre() << std::endl;
@@ -765,7 +765,7 @@ void listaArrayList(int& opcionExtra){
 			cout << "\t\tIngrese la posici�n del elemento siguiente al que desea obtener: ";
 			cin >> posicion;
 			if (posicion > 0){
-				Alumno* alumnoAnterior = dynamic_cast<Alumno*>(arrayList.obtener(posicion - 1));
+				Alumno* alumnoAnterior = dynamic_cast<Alumno*>(arraylist.obtener(posicion - 1));
 				cout << "\t\tEl alumno anterior es: " << endl;
 				cout << "\t\t" << alumnoAnterior->getNombre() << "[" << alumnoAnterior->getNumCuenta() << "]\n";
 			} else{
@@ -776,7 +776,7 @@ void listaArrayList(int& opcionExtra){
 		case 9:
 		{
 			std::cout << "" << std::endl;
-			arrayList.anular();
+			arraylist.anular();
 			cout << "\t\tSe han borrado todos los elementos de la lista." << endl;
 			break;
 		}
